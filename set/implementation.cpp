@@ -14,11 +14,14 @@ int main(){
     {
         cout<<i<<" ";
     }
-    
+    set<int>:: iterator it;
     cout<<"after deleting"<<endl;
     for(auto i: s)
     {
         cout<<i<<" ";
     }
+    it=s.find(7);
+    cout<<endl;
+    cout<<*it;
     return 0;
 }
